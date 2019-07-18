@@ -17,10 +17,10 @@ This snippet demonstrates how to retrieve the machine type of an executable on d
         // error handling
     }
     switch (file.fileHeader().machine()) {
-    case win32pe::FileHeader::i386:
+    case win32pe::FileHeader::arch_i386:
         std::cout << "i386 file\n";
         break;
-    case win32pe::FileHeader::amd64:
+    case win32pe::FileHeader::arch_amd64:
         std::cout << "amd64 file\n";
         break;
     default:

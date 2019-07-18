@@ -42,8 +42,8 @@ class WIN32PE_EXPORT FileHeader
 public:
 
     enum {
-        i386  = 0x014c,
-        amd64 = 0x8664
+        arch_i386  = 0x014c,
+        arch_amd64 = 0x8664
     };
 
     enum {

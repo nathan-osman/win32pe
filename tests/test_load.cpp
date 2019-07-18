@@ -45,7 +45,7 @@ BOOST_AUTO_TEST_CASE(test_load)
     BOOST_TEST(file.load(stringstream));
 
     // Test the file header
-    BOOST_TEST(file.fileHeader().machine() == win32pe::FileHeader::amd64);
+    BOOST_TEST(file.fileHeader().machine() == win32pe::FileHeader::arch_amd64);
     BOOST_TEST(file.fileHeader().timeDateStamp() == 1512189454);
     BOOST_TEST(file.fileHeader().characteristics() ==
         win32pe::FileHeader::RelocsStripped |
