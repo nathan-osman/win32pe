@@ -5,11 +5,11 @@ language: cpp
 addons:
   apt:
     sources:
-    - sourceline: 'ppa:kzemek/boost'
+    - sourceline: 'ppa:mhier/libboost-latest'
     packages:
-    - boost1.58
+    - libboost1.68-dev
 
 script:
-  - cmake .
+  - cmake -DBUILD_TESTS=on .
   - make
   - ctest
